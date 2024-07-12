@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brooklyn Stoop Sale Invitation</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+    <audio id="background-music" src="Assets/Music.mp3" loop></audio>
+    <div class="background-image">
+        <img src="Assets/Img3.webp" alt="Background Image">
+    </div>
+    <div class="invitation">
+        <div class="floral-border">
+            <img src="Assets/Border.png" alt="Floral Border Image">
+        </div>
+        <div class="invitation-content">
+            <h1>Brooklyn Stoop Sale!</h1>
+            <p>Join us for a day of fun and great deals!</p>
+            <p><strong>Date:</strong> July 20, 2024</p>
+            <p><strong>Time:</strong> 10:00 AM - 4:00 PM</p>
+            <p><strong>Location:</strong> 123 Brooklyn Ave, Brooklyn, NY</p>
+            <div id="map" class="map-container"></div>
+            <div>
+                <button onclick="share()">Share</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Additional Information</h2>
+            <p>We'll have a variety of items for sale including clothes, books, toys, and more!</p>
+            <p>Don't forget to bring cash and a reusable bag for your purchases.</p>
+            <p>See you there!</p>
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM8LFkdq9fISqWRWFt1u-rqsALyptk1g4&callback=initMap" async defer></script>
+    <script src="JS/Main.js"></script>
+</body>
+</html>
